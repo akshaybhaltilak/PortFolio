@@ -1,195 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akshay Bhaltilak</title>
+    <meta name="description" content="Akshay Bhaltilak - Full Stack Web Developer specializing in dynamic web applications." />
+    <meta name="keywords" content="web development, full stack, React, Node.js, portfolio" />
+    <meta name="author" content="Akshay Bhaltilak" />
+    <title>Akshay Bhaltilak - Full Stack Web Developer</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/boy.png" />
-    
-    <!-- Preconnect for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Font styles -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Local stylesheet -->
-    <link href="./assets/css/styles.css" rel="stylesheet" media="print" onload="this.media='all'"/>
-    <noscript><link href="./assets/css/styles.css" rel="stylesheet" /></noscript>
-    
-    <!-- Preload important images -->
-    <link rel="preload" as="image" href="./assets/images/my_img.jpg" />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/images/my-img.jpg" />
     <link rel="preload" as="image" href="./assets/images/image-mask.svg" />
-</head>
-<body class="black">
+  </head>
+  <body class="black">
     <header class="header">
-        <div class="container">
-            <a href="#" class="logo">PORTFOLIO</a>
-            <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="#" class="logo">AKSHAY</a>
-                    <button class="navbar-close-btn" data-nav-toggler aria-label="Close menu">
-                        <i class="fa fa-window-close" style="color: #00c3ff"></i>
-                    </button>
-                </div>
-                <ul class="navbar-list">
-                    <li><a href="#home" class="navbar-link">Home</a></li>
-                    <li><a href="#skill" class="navbar-link">Skills</a></li>
-                    <li><a href="#projects" class="navbar-link">Projects</a></li>
-                    <li><a href="#contact" class="navbar-link">Contact</a></li>
-                </ul>
-                <div class="theme-wrapper">
-                    <button id="theme-btn" class="btn theme" aria-label="Toggle theme"><i class="fa-solid fa-brush"></i></button>
-                </div>
-            </nav>
-            <button class="nav-open-btn" data-nav-toggler aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
+      <div class="container">
+        <a href="#" class="logo">PORTFOLIO</a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">AKSHAY</a>
+            <button class="navbar-close-btn" data-nav-toggler>
+              <i class="fa fa-window-close" style="color: #00c3ff"></i>
             </button>
-            <div class="overlay" data-nav-toggler data-overlay></div>
-        </div>
+          </div>
+          <ul class="navbar-list">
+            <li><a href="#home" class="navbar-link">Home</a></li>
+            <li><a href="#skill" class="navbar-link">Skills</a></li>
+            <li><a href="#projects" class="navbar-link">Projects</a></li>
+            <li><a href="#contact" class="navbar-link">Contact</a></li>
+          </ul>
+          <div class="theme-wrapper">
+            <button id="theme-btn" class="btn theme"><i class="fa-solid fa-brush"></i></button>
+          </div>
+        </nav>
+        <button class="nav-open-btn" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
     </header>
+
     <main>
-        <article>
-            <div id="home">
-                <section class="section hero">
-                    <div class="container">
-                        <div class="hero-content">
-                            <h1 class="h1 title">Hi, I'm Akshay Bhaltilak. Full Stack Web Developer.</h1>
-                            <p class="section-text">
-                                Hello! I'm Akshay, a versatile professional with a comprehensive understanding of both front-end and back-end development.
-                            </p>
-                            <div class="social-icons-wrapper">
-                                <a href="https://www.linkedin.com/in/akshay-bhaltilak-5a8197251" aria-label="LinkedIn Profile"><i style="color: #f3c600" class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://x.com/akshayAB09?s=09" aria-label="Twitter Profile"><i style="color: #ea07b9" class="fa-brands fa-twitter"></i></a>
-                                <a href="https://github.com/akshaybhaltilak" aria-label="GitHub Profile"><i style="color: #02e9cf" class="fa-brands fa-github"></i></a>
-                                <a href="https://www.instagram.com/akshay_bhaltilak_ab_09?utm_source=qr&igsh=YzU1NGVlODEzOA%3D%3D" aria-label="Instagram Profile"><i style="color: #e02566" class="fa-brands fa-instagram"></i></a>
-                            </div>
-                            <div class="btn-wrapper">
-                                <button class="btn">
-                                    <a href="assets/images/akshay_resume.docx" download="" aria-label="Download My CV">My CV</a>
-                                </button>
-                                <button class="btn">
-                                    <a href="#contact" aria-label="Hire Me">Hire Me</a>
-                                </button>
-                            </div>
-                        </div>
-                        <figure class="hero-banner">
-                            <img src="./assets/images/my_img.jpg" width="560" height="560" alt="Akshay" class="w-100" loading="lazy" />
-                        </figure>
-                    </div>
-                </section>
+      <article>
+        <div id="home">
+          <section class="section hero">
+            <div class="container">
+              <div class="hero-content">
+                <h1 class="h1 title">Hi, I'm Akshay Bhaltilak. Full Stack Web Developer.</h1>
+                <p class="section-text">
+                  Hello! I'm Akshay, a full stack web developer with a comprehensive understanding of both front-end and back-end development.
+                </p>
+                <div class="social-icons-wrapper">
+                  <a href="https://www.linkedin.com/in/akshay-bhaltilak-5a8197251" aria-label="LinkedIn Profile"><i style="color: #f3c600" class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://x.com/akshayAB09?s=09" aria-label="Twitter Profile"><i style="color: #ea07b9" class="fa-brands fa-twitter"></i></a>
+                  <a href="https://github.com/akshaybhaltilak" aria-label="GitHub Profile"><i style="color: #02e9cf" class="fa-brands fa-github"></i></a>
+                  <a href="https://www.instagram.com/akshay_bhaltilak_ab_09?utm_source=qr&igsh=YzU1NGVlODEzOA%3D%3D" aria-label="Instagram Profile"><i style="color: #e02566" class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn-wrapper">
+                  <button class="btn"><a href="assets/images/akshay_resume.docx" download>My CV</a></button>
+                  <button class="btn"><a href="#contact">Hire Me</a></button>
+                </div>
+              </div>
+              <figure class="hero-banner">
+                <img src="./assets/images/my-img.jpg" width="560" height="560" alt="Akshay Bhaltilak" class="w-100" />
+              </figure>
             </div>
-            <div id="skill">
-                <div class="divider"></div>
-                <section class="section about">
-                    <div class="container">
-                        <div class="wrapper">
-                            <div class="left">
-                                <h2 class="h2 section-title">My Skills</h2>
-                                <p class="section-text">
-                                    As a full stack web developer, I possess a diverse set of skills that enable me to create dynamic and interactive web applications.
-                                </p>
-                            </div>
-                            <ul class="progress-list">
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>HTML</p>
-                                        <span class="span">100 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 100%; background-color: #f3b500"></div>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>CSS</p>
-                                        <span class="span">80 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 80%; background-color: #ea07b9"></div>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>JavaScript</p>
-                                        <span class="span">85 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 85%; background-color: #02e9cf"></div>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>React JS</p>
-                                        <span class="span">85 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 85%; background-color: #9802e9"></div>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>Tailwind CSS</p>
-                                        <span class="span">70 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 70%; background-color: #e90244"></div>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <div class="label-wrapper">
-                                        <p>Node.js</p>
-                                        <span class="span">70 %</span>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-fill" style="width: 90%; background-color: #ef7816"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <ul class="grid-list">
-                            <li>
-                                <div class="about-card">
-                                    <div class="card-icon">
-                                        <i style="color: #f3b500" class="fa-solid fa-code"></i>
-                                    </div>
-                                    <h3 class="h4 card-title">Front-End</h3>
-                                    <p class="card-text">HTML, CSS, and JavaScript are essential for creating visually appealing and user-friendly interfaces.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="about-card">
-                                    <div class="card-icon">
-                                        <i style="color: #02e9cf" class="fa-solid fa-file-code"></i>
-                                    </div>
-                                    <h3 class="h4 card-title">Back-End</h3>
-                                    <p class="card-text">Knowledge of server-side programming languages such as Node.js is crucial for building robust back-end systems.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="about-card">
-                                    <div class="card-icon">
-                                        <i style="color: #ea07b9" class="fa-solid fa-database"></i>
-                                    </div>
-                                    <h3 class="h4 card-title">Database</h3>
-                                    <p class="card-text">Proficient in managing SQL databases, including PostgreSQL, MySQL, and ElephantSQL.</p>
-                                </div>
-                            </li>
-                            <!-- Continue with other sections -->
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <!-- More sections can be added here -->
-        </article>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Akshay Bhaltilak. All rights reserved.</p>
+          </section>
         </div>
+
+        <div id="skill">
+          <div class="divider"></div>
+          <section class="section about">
+            <div class="container">
+              <div class="wrapper">
+                <div class="left">
+                  <h2 class="h2 section-title">My Skills</h2>
+                  <p class="section-text">
+                    As a full stack web developer, I possess a diverse set of skills that enable me to create dynamic and interactive web applications. Here are some of my key skills:
+                  </p>
+                </div>
+                <ul class="progress-list">
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>HTML</p>
+                      <span class="span">100 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 100%; background-color: #f3b500"></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>CSS</p>
+                      <span class="span">80 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 80%; background-color: #ea07b9"></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>JavaScript</p>
+                      <span class="span">85 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 85%; background-color: #02e9cf"></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>React.js</p>
+                      <span class="span">85 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 85%; background-color: #9802e9"></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Tailwind CSS</p>
+                      <span class="span">70 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 70%; background-color: #e90244"></div>
+                    </div>
+                  </li>
+                  <li class="progress-item">
+                    <div class="label-wrapper">
+                      <p>Node.js</p>
+                      <span class="span">70 %</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-fill" style="width: 70%; background-color: #ef7816"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="grid-list">
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i style="color: #f3b500" class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="h4 card-title">Front-End</h3>
+                    <p class="card-text">
+                      HTML, CSS, and JavaScript are essential for creating visually appealing and user-friendly interfaces.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i style="color: #02e9cf" class="fa-solid fa-file-code"></i>
+                    </div>
+                    <h3 class="h4 card-title">Back-End</h3>
+                    <p class="card-text">
+                      Knowledge of server-side programming languages such as Node.js is crucial for building robust back-end systems.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i style="color: #ea07b9" class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="h4 card-title">UI/UX Design</h3>
+                    <p class="card-text">
+                      A strong understanding of user experience principles ensures that web applications are intuitive and engaging.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <i style="color: #f3c600" class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="h4 card-title">Database Management</h3>
+                    <p class="card-text">
+                      Experience with databases such as MongoDB allows for effective data storage and retrieval.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div id="projects">
+          <div class="divider"></div>
+          <section class="section portfolio">
+            <div class="container">
+              <h2 class="h2 section-title">My Projects</h2>
+              <p class="section-text">Here are some of the projects I've worked on:</p>
+              <ul class="grid-list">
+                <li>
+                  <div class="portfolio-card">
+                    <div class="card-image">
+                      <img src="./assets/images/project1.png" alt="Project 1" />
+                    </div>
+                    <h3 class="h4 card-title">Project Title 1</h3>
+                    <p class="card-text">Brief description of the project, highlighting key features and technologies used.</p>
+                    <a href="https://github.com/project1" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="portfolio-card">
+                    <div class="card-image">
+                      <img src="./assets/images/project2.png" alt="Project 2" />
+                    </div>
+                    <h3 class="h4 card-title">Project Title 2</h3>
+                    <p class="card-text">Brief description of the project, highlighting key features and technologies used.</p>
+                    <a href="https://github.com/project2" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="portfolio-card">
+                    <div class="card-image">
+                      <img src="./assets/images/project3.png" alt="Project 3" />
+                    </div>
+                    <h3 class="h4 card-title">Project Title 3</h3>
+                    <p class="card-text">Brief description of the project, highlighting key features and technologies used.</p>
+                    <a href="https://github.com/project3" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="portfolio-card">
+                    <div class="card-image">
+                      <img src="./assets/images/project4.png" alt="Project 4" />
+                    </div>
+                    <h3 class="h4 card-title">Project Title 4</h3>
+                    <p class="card-text">Brief description of the project, highlighting key features and technologies used.</p>
+                    <a href="https://github.com/project4" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div id="contact">
+          <div class="divider"></div>
+          <section class="section contact">
+            <div class="container">
+              <h2 class="h2 section-title">Contact Me</h2>
+              <form action="#" method="post">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Akshay Bhaltilak. All Rights Reserved.</p>
+        <ul class="footer-social">
+          <li><a href="https://www.linkedin.com/in/akshay-bhaltilak-5a8197251" aria-label="LinkedIn Profile">LinkedIn</a></li>
+          <li><a href="https://x.com/akshayAB09?s=09" aria-label="Twitter Profile">Twitter</a></li>
+          <li><a href="https://github.com/akshaybhaltilak" aria-label="GitHub Profile">GitHub</a></li>
+          <li><a href="https://www.instagram.com/akshay_bhaltilak_ab_09?utm_source=qr&igsh=YzU1NGVlODEzOA%3D%3D" aria-label="Instagram Profile">Instagram</a></li>
+        </ul>
+      </div>
     </footer>
-</body>
+    <script src="./assets/js/script.js" type="module"></script>
+  </body>
 </html>
