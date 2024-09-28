@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Local stylesheet -->
-    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet" media="print" onload="this.media='all'"/>
+    <noscript><link href="./assets/css/styles.css" rel="stylesheet" /></noscript>
     
     <!-- Preload important images -->
-    <link rel="preload" as="image" href="./assets/images/my img.jpg" />
+    <link rel="preload" as="image" href="./assets/images/my_img.jpg" />
     <link rel="preload" as="image" href="./assets/images/image-mask.svg" />
 </head>
 <body class="black">
@@ -30,7 +31,7 @@
             <nav class="navbar" data-navbar>
                 <div class="navbar-top">
                     <a href="#" class="logo">AKSHAY</a>
-                    <button class="navbar-close-btn" data-nav-toggler>
+                    <button class="navbar-close-btn" data-nav-toggler aria-label="Close menu">
                         <i class="fa fa-window-close" style="color: #00c3ff"></i>
                     </button>
                 </div>
@@ -41,10 +42,10 @@
                     <li><a href="#contact" class="navbar-link">Contact</a></li>
                 </ul>
                 <div class="theme-wrapper">
-                    <button id="theme-btn" class="btn theme"><i class="fa-solid fa-brush"></i></button>
+                    <button id="theme-btn" class="btn theme" aria-label="Toggle theme"><i class="fa-solid fa-brush"></i></button>
                 </div>
             </nav>
-            <button class="nav-open-btn" data-nav-toggler>
+            <button class="nav-open-btn" data-nav-toggler aria-label="Open menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="overlay" data-nav-toggler data-overlay></div>
@@ -61,18 +62,22 @@
                                 Hello! I'm Akshay, a versatile professional with a comprehensive understanding of both front-end and back-end development.
                             </p>
                             <div class="social-icons-wrapper">
-                                <a href="https://www.linkedin.com/in/akshay-bhaltilak-5a8197251"><i style="color: #f3c600" class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://x.com/akshayAB09?s=09"><i style="color: #ea07b9" class="fa-brands fa-twitter"></i></a>
-                                <a href="https://github.com/akshaybhaltilak"><i style="color: #02e9cf" class="fa-brands fa-github"></i></a>
-                                <a href="https://www.instagram.com/akshay_bhaltilak_ab_09?utm_source=qr&igsh=YzU1NGVlODEzOA%3D%3D"><i style="color: #e02566" class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/akshay-bhaltilak-5a8197251" aria-label="LinkedIn Profile"><i style="color: #f3c600" class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://x.com/akshayAB09?s=09" aria-label="Twitter Profile"><i style="color: #ea07b9" class="fa-brands fa-twitter"></i></a>
+                                <a href="https://github.com/akshaybhaltilak" aria-label="GitHub Profile"><i style="color: #02e9cf" class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/akshay_bhaltilak_ab_09?utm_source=qr&igsh=YzU1NGVlODEzOA%3D%3D" aria-label="Instagram Profile"><i style="color: #e02566" class="fa-brands fa-instagram"></i></a>
                             </div>
                             <div class="btn-wrapper">
-                                <button class="btn"><a href="assets/images/akshay resume.docx" download="">My CV</a></button>
-                                <button class="btn"><a href="#contact">Hire Me</a></button>
+                                <button class="btn">
+                                    <a href="assets/images/akshay_resume.docx" download="" aria-label="Download My CV">My CV</a>
+                                </button>
+                                <button class="btn">
+                                    <a href="#contact" aria-label="Hire Me">Hire Me</a>
+                                </button>
                             </div>
                         </div>
                         <figure class="hero-banner">
-                            <img src="./assets/images/my img.jpg" width="560" height="560" alt="Akshay" class="w-100" loading="lazy" />
+                            <img src="./assets/images/my_img.jpg" width="560" height="560" alt="Akshay" class="w-100" loading="lazy" />
                         </figure>
                     </div>
                 </section>
@@ -173,4 +178,18 @@
                                     <p class="card-text">Proficient in managing SQL databases, including PostgreSQL, MySQL, and ElephantSQL.</p>
                                 </div>
                             </li>
-                            <li
+                            <!-- Continue with other sections -->
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- More sections can be added here -->
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Akshay Bhaltilak. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
